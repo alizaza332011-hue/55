@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class PlayerProfileEntity(
     @PrimaryKey val id: Int = 1,
     val playerName: String = "اللاعب",
-    val ageGroupName: String = AgeGroup.YOUNG_ADULT_18_25.name,
+    val ageGroupName: String = AgeGroup.TEEN_13_17.name,
     val fitnessLevelName: String = FitnessLevel.BEGINNER.name,
     val level: Int = 1,
     val currentXp: Int = 0,
