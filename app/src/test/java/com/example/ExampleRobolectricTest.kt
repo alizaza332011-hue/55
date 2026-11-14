@@ -10,6 +10,7 @@ import com.example.data.FitnessCatalog
 import com.example.data.FitnessLevel
 import com.example.data.LevelingRepository
 import com.example.data.ProgressionCatalog
+import com.example.data.PlayerProfileEntity
 import com.example.data.QuestStatus
 import com.example.data.UserPreferencesStore
 import com.example.data.VideoPlayerType
@@ -72,6 +73,9 @@ class ExampleRobolectricTest {
     @Test
     fun `awakening quest completion postpone and json roundtrip work properly`() = runTest {
         repo.ensureSeeded()
+        val initialProfile = repo.appSnapshotFlow.first().profile
+        assertEquals(AgeGroup.TEEN_13_17.name, PlayerProfileEntity().ageGroupName)
+        assertEquals(AgeGroup.TEEN_13_17.name, initialProfile.ageGroupName)
         repo.completeAwakening("علي", AgeGroup.TEEN_13_17, FitnessLevel.BEGINNER)
 
         val before = repo.appSnapshotFlow.first()
