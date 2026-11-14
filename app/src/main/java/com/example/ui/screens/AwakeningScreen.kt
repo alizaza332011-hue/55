@@ -68,7 +68,7 @@ fun AwakeningScreen(
     val hud = LocalHudPalette.current
     var showContent by remember { mutableStateOf(false) }
     var playerName by remember { mutableStateOf("") }
-    var selectedAge by remember { mutableStateOf(AgeGroup.YOUNG_ADULT_18_25) }
+    var selectedAge by remember { mutableStateOf(AgeGroup.TEEN_13_17) }
     var selectedFitness by remember { mutableStateOf(FitnessLevel.BEGINNER) }
 
     LaunchedEffect(Unit) {

@@ -624,7 +624,7 @@ class LevelingRepository(
                     PlayerProfileEntity(
                         id = 1,
                         playerName = pJson.optString("playerName", "اللاعب"),
-                        ageGroupName = pJson.optString("ageGroupName", AgeGroup.YOUNG_ADULT_18_25.name),
+                        ageGroupName = pJson.optString("ageGroupName", AgeGroup.TEEN_13_17.name),
                         fitnessLevelName = pJson.optString("fitnessLevelName", FitnessLevel.BEGINNER.name),
                         level = pJson.optInt("level", 1),
                         currentXp = pJson.optInt("currentXp", 0),
