@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Real Life Leveling</string>
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_quests">المهام</string>
+    <string name="nav_training">التدريب</string>
+    <string name="nav_evolution">التطور</string>
+    <string name="nav_profile">الملف</string>
+</resources>

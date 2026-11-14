@@ -1,0 +1,6 @@
+{
+  "name": "Real Life Leveling",
+  "description": "تطبيق تطوير ذات تفاعلي بنظام ألعاب RPG مع مهام يومية وأكاديمية تدريب وتطور شامل.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
